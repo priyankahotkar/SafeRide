@@ -1,0 +1,144 @@
+.hero {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.highlight {
+  display: block;
+  color: #0066cc;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-large.btn-primary {
+  background: #0066cc;
+  color: #ffffff;
+}
+
+.btn-large.btn-primary:hover {
+  background: #0052a3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 102, 204, 0.2);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #0066cc;
+  color: #0066cc;
+}
+
+.btn-outline:hover {
+  background: #0066cc;
+  color: #ffffff;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat strong {
+  font-size: 1.75rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.stat span {
+  font-size: 0.875rem;
+  color: #6a6a6a;
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 968px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn-large {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 2rem;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+}

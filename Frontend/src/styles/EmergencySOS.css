@@ -1,0 +1,251 @@
+.emergency-sos {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.sos-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sos-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.sos-info h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.5px;
+}
+
+.sos-info > p {
+  font-size: 1.125rem;
+  color: #4a4a4a;
+  margin: 0 0 2rem 0;
+  line-height: 1.7;
+}
+
+.sos-alerts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sos-alerts li {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.2s;
+}
+
+.sos-alerts li:hover {
+  border-color: #0066cc;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+}
+
+.alert-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.sos-alerts strong {
+  display: block;
+  font-size: 1.125rem;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.sos-alerts p {
+  font-size: 1rem;
+  color: #6a6a6a;
+  margin: 0;
+}
+
+.sos-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-mockup {
+  width: 300px;
+  height: 600px;
+  background: #1a1a1a;
+  border-radius: 40px;
+  padding: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.phone-mockup::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 25px;
+  background: #1a1a1a;
+  border-radius: 0 0 20px 20px;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.phone-screen h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  text-align: center;
+}
+
+.sos-button {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  border: 8px solid #fff;
+  box-shadow: 0 8px 24px rgba(220, 53, 69, 0.4);
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #ffffff;
+}
+
+.sos-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(220, 53, 69, 0.5);
+}
+
+.sos-button.active {
+  background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.sos-icon {
+  font-size: 3rem;
+}
+
+.sos-text {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sos-status {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #28a745;
+}
+
+.sos-note {
+  font-size: 0.75rem;
+  color: #6a6a6a;
+  text-align: center;
+  margin: 0;
+}
+
+.safety-features {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 16px;
+  border: 2px solid #e0e0e0;
+}
+
+.safety-features h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.safety-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f8fbff;
+  border-radius: 12px;
+}
+
+.safety-item span {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.safety-item p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+  .emergency-sos {
+    padding: 4rem 1.5rem;
+  }
+
+  .sos-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .sos-info h2 {
+    font-size: 2rem;
+  }
+
+  .phone-mockup {
+    width: 280px;
+    height: 560px;
+  }
+
+  .sos-button {
+    width: 150px;
+    height: 150px;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+}
