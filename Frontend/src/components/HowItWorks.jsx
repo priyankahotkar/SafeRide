@@ -6,7 +6,7 @@ function HowItWorks() {
       number: '01',
       title: 'Book Your Ride',
       description: 'Choose from scooty, auto-rickshaw, or cab. Select solo or shared ride option based on your preference.',
-      image: 'https://images.pexels.com/photos/4623069/pexels-photo-4623069.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MToyZGVkOGU1ZDM3MGUwOGMxOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxODAyZmUwMzM2ODowMDA2NGE2MTU2OGQwYThmEAI='
     },
     {
       number: '02',
