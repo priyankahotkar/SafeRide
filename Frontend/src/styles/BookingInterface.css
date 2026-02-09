@@ -1,6 +1,6 @@
 .booking-interface {
-  padding: 6rem 2rem;
-  background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+  padding: 7rem 2rem;
+  background: linear-gradient(135deg, #ff6b6b 0%, #f15555 50%, #ff6b6b 100%);
 }
 
 .booking-container {
@@ -11,22 +11,24 @@
 .booking-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 3rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  padding: 3.5rem;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.15);
 }
 
 .booking-card h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f2c4d;
+  margin: 0 0 0.75rem 0;
   text-align: center;
+  letter-spacing: -0.01em;
 }
 
 .booking-subtitle {
   text-align: center;
-  color: #6a6a6a;
-  margin: 0 0 2rem 0;
+  color: #666;
+  margin: 0 0 2.5rem 0;
+  font-size: 1.0625rem;
 }
 
 .booking-form {
@@ -49,19 +51,20 @@
 
 .form-input,
 .form-select {
-  padding: 0.875rem 1rem;
+  padding: 0.95rem 1.2rem;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
-  font-size: 1rem;
-  transition: all 0.2s;
+  font-size: 1.0625rem;
+  transition: all 0.3s ease;
   font-family: inherit;
+  color: #555;
 }
 
 .form-input:focus,
 .form-select:focus {
   outline: none;
-  border-color: #0066cc;
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.1);
 }
 
 .form-row {
@@ -71,108 +74,118 @@
 }
 
 .btn-estimate {
-  padding: 1rem;
-  background: #f8fbff;
-  border: 2px solid #0066cc;
-  color: #0066cc;
+  padding: 1.1rem;
+  background: transparent;
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
   border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.0625rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
 
 .btn-estimate:hover {
-  background: #0066cc;
+  background: #ff6b6b;
   color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .fare-estimate {
-  background: #f8fbff;
+  background: #f8f9fa;
   border-radius: 12px;
-  padding: 1.5rem;
-  border: 2px solid #e0f0ff;
+  padding: 2rem;
+  border: 1px solid #e8eef7;
 }
 
 .fare-details {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .fare-row {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
-  color: #4a4a4a;
+  font-size: 1.0625rem;
+  color: #666;
+  font-weight: 300;
 }
 
 .fare-row.savings {
   color: #28a745;
+  font-weight: 500;
 }
 
 .fare-row.total {
-  padding-top: 0.75rem;
+  padding-top: 1rem;
   border-top: 2px solid #e0e0e0;
-  font-size: 1.25rem;
-  color: #1a1a1a;
+  font-size: 1.4rem;
+  color: #0f2c4d;
+  font-weight: 700;
 }
 
 .fare-note {
-  font-size: 0.875rem;
-  color: #6a6a6a;
+  font-size: 0.95rem;
+  color: #999;
   margin: 0;
   text-align: center;
   font-style: italic;
 }
 
 .btn-book {
-  padding: 1.125rem;
-  background: #0066cc;
+  padding: 1.2rem;
+  background: #ff6b6b;
   border: none;
   color: #ffffff;
   border-radius: 8px;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.25);
 }
 
 .btn-book:hover {
-  background: #0052a3;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 102, 204, 0.3);
+  background: #f15555;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(255, 107, 107, 0.35);
 }
 
 .booking-features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 2px solid #e0e0e0;
 }
 
 .feature-item {
   text-align: center;
-  font-size: 0.875rem;
-  color: #4a4a4a;
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 300;
 }
 
 .feature-item span {
-  color: #28a745;
-  font-weight: bold;
-  margin-right: 0.25rem;
+  color: #ff6b6b;
+  font-weight: 700;
+  margin-right: 0.4rem;
 }
 
 @media (max-width: 768px) {
   .booking-interface {
-    padding: 4rem 1.5rem;
+    padding: 5rem 1.5rem;
   }
 
   .booking-card {
-    padding: 2rem 1.5rem;
+    padding: 2.5rem;
+  }
+
+  .booking-card h2 {
+    font-size: 1.75rem;
   }
 
   .form-row {
@@ -181,6 +194,6 @@
 
   .booking-features {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }

@@ -1,6 +1,6 @@
 .how-it-works {
-  padding: 6rem 2rem;
-  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+  padding: 7rem 2rem;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
 .how-container {
@@ -10,37 +10,42 @@
 
 .how-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .how-header h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 1rem 0;
-  letter-spacing: -0.5px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #0f2c4d;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
 }
 
 .how-header p {
-  font-size: 1.125rem;
-  color: #6a6a6a;
+  font-size: 1.25rem;
+  color: #666;
   margin: 0;
+  font-weight: 300;
+  line-height: 1.8;
 }
 
 .steps-container {
   display: grid;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .step {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 3rem;
+  grid-template-columns: 350px 1fr;
+  gap: 4rem;
   align-items: center;
 }
 
 .step:nth-child(even) {
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 350px;
 }
 
 .step:nth-child(even) .step-image {
@@ -51,58 +56,61 @@
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .step-image img {
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   display: block;
 }
 
 .step-number {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: #0066cc;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: #ff6b6b;
   color: #ffffff;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
 }
 
 .step-content h3 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 1rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f2c4d;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.01em;
 }
 
 .step-content p {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #666;
   margin: 0;
+  font-weight: 300;
 }
 
 @media (max-width: 968px) {
   .how-it-works {
-    padding: 4rem 1.5rem;
+    padding: 5rem 1.5rem;
   }
 
   .how-header h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .step {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .step:nth-child(even) {
@@ -114,6 +122,10 @@
   }
 
   .step-image img {
-    height: 250px;
+    height: 280px;
+  }
+
+  .step-content h3 {
+    font-size: 1.5rem;
   }
 }

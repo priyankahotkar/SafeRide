@@ -1,16 +1,21 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleMenuClose = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="nav-brand">
+        <Link to="/" className="nav-brand" onClick={handleMenuClose}>
           <h1>SafeRide</h1>
           <span className="tagline">By Women, For Women</span>
-        </div>
+        </Link>
 
         <button
           className="menu-toggle"
@@ -23,12 +28,12 @@ function Navbar() {
         </button>
 
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#safety">Safety</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#partners">Partners</a></li>
-          <li><a href="#drive-with-us">Drive With Us</a></li>
+          <li><Link to="/" onClick={handleMenuClose}>Home</Link></li>
+          <li><Link to="/how-it-works" onClick={handleMenuClose}>How It Works</Link></li>
+          <li><Link to="/safety" onClick={handleMenuClose}>Safety</Link></li>
+          <li><Link to="/booking" onClick={handleMenuClose}>Book Now</Link></li>
+          <li><Link to="/partners" onClick={handleMenuClose}>Partners</Link></li>
+          <li><Link to="/about" onClick={handleMenuClose}>About Us</Link></li>
         </ul>
 
         <div className="nav-actions">

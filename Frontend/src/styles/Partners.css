@@ -1,6 +1,6 @@
 .partners {
-  padding: 6rem 2rem;
-  background: #ffffff;
+  padding: 7rem 2rem;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
 .partners-container {
@@ -11,151 +11,170 @@
 .partners-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 5rem;
   align-items: start;
 }
 
 .partners-text h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 1rem 0;
-  letter-spacing: -0.5px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #0f2c4d;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
 }
 
 .partners-lead {
-  font-size: 1.25rem;
-  color: #0066cc;
+  font-size: 1.3rem;
+  color: #ff6b6b;
   margin: 0 0 1.5rem 0;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .partners-description {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: #4a4a4a;
-  margin: 0 0 2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #666;
+  margin: 0 0 2.5rem 0;
+  font-weight: 300;
 }
 
 .partner-benefits {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
 }
 
 .benefit {
   display: flex;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: #f8fbff;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #ffffff;
   border-radius: 12px;
-  border-left: 4px solid #0066cc;
+  border-left: 4px solid #ff6b6b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.12);
 }
 
 .benefit-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   flex-shrink: 0;
 }
 
 .benefit h4 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f2c4d;
+  margin: 0 0 0.6rem 0;
+  letter-spacing: -0.01em;
 }
 
 .benefit p {
   font-size: 1rem;
-  color: #4a4a4a;
+  color: #666;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.7;
+  font-weight: 300;
 }
 
 .btn-partner {
-  padding: 1.125rem 2.5rem;
-  background: #0066cc;
+  padding: 1.2rem 2.8rem;
+  background: #ff6b6b;
   border: none;
   color: #ffffff;
   border-radius: 8px;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.25);
 }
 
 .btn-partner:hover {
-  background: #0052a3;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(0, 102, 204, 0.3);
+  background: #f15555;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(255, 107, 107, 0.35);
 }
 
 .partners-showcase {
-  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
-  padding: 2.5rem;
-  border-radius: 16px;
-  border: 2px solid #e0f0ff;
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px solid #e8eef7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .partners-showcase h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 2rem 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #0f2c4d;
+  margin: 0 0 2.5rem 0;
   text-align: center;
+  letter-spacing: -0.01em;
 }
 
 .partners-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .partner-card {
-  background: #ffffff;
-  padding: 1.5rem;
+  background: #f8f9fa;
+  padding: 2rem;
   border-radius: 12px;
   text-align: center;
-  border: 1px solid #e0e0e0;
-  transition: all 0.2s;
+  border: 1px solid #e8eef7;
+  transition: all 0.3s ease;
 }
 
 .partner-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
 }
 
 .partner-logo {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .partner-card h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f2c4d;
+  margin: 0 0 0.6rem 0;
+  letter-spacing: -0.01em;
 }
 
 .partner-card p {
-  font-size: 0.875rem;
-  color: #6a6a6a;
+  font-size: 0.95rem;
+  color: #666;
   margin: 0;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 .join-text {
   text-align: center;
-  color: #6a6a6a;
+  color: #999;
   font-size: 1rem;
   margin: 0;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e0e0e0;
+  padding-top: 2rem;
+  border-top: 2px solid #e8eef7;
+  font-weight: 300;
 }
 
 @media (max-width: 968px) {
   .partners {
-    padding: 4rem 1.5rem;
+    padding: 5rem 1.5rem;
   }
 
   .partners-content {
@@ -164,7 +183,7 @@
   }
 
   .partners-text h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .partners-grid {
