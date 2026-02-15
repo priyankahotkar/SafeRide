@@ -74,7 +74,7 @@ function Footer() {
             </div>
           </div>
           <div className="footer-copyright">
-            <p>&copy; 2024 SafeRide. All rights reserved.</p>
+            <p>&copy; 2026 SafeRide. All rights reserved.</p>
             <p>Empowering women, one ride at a time.</p>
           </div>
         </div>

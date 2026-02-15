@@ -37,8 +37,8 @@ function Navbar() {
         </ul>
 
         <div className="nav-actions">
-          <button className="btn-secondary">Sign In</button>
-          <button className="btn-primary">Get Started</button>
+          <Link to="/login" className="btn-secondary">Sign In</Link>
+          <Link to="/register" className="btn-primary">Get Started</Link>
         </div>
       </div>
     </nav>

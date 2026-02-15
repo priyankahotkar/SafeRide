@@ -120,6 +120,8 @@
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-secondary:hover {
@@ -138,6 +140,8 @@
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(255, 107, 107, 0.25);
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-primary:hover {

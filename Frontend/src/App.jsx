@@ -7,6 +7,8 @@ import HowToUse from './pages/HowToUse';
 import Booking from './pages/Booking';
 import Partners from './pages/Partners';
 import About from './pages/About';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import './App.css';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="/booking" element={<Booking />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />
       </div>
